@@ -35,7 +35,7 @@ body {
     align-content: center;
 }
 
-.sketch-container {
+.sketch-pad {
     display: flex;
     width: 512px;
     flex-wrap: wrap;

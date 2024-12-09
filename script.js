@@ -1,11 +1,11 @@
 
-const SKETCH_BOX = document.querySelector('.sketch-container');
+const SKETCH_PAD = document.querySelector('.sketch-pad');
 
 for (let j = 0; j < 16; j++) {
     for (let i = 0; i < 16; i++) {
-        const DIV = document.createElement('div');
-        DIV.classList.add('sketch-box');
-        SKETCH_BOX.appendChild(DIV);
+        const BOX = document.createElement('div');
+        BOX.classList.add('sketch-box');
+        SKETCH_PAD.appendChild(BOX);
     }
 }
 
