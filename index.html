@@ -21,8 +21,10 @@
                 <label for="grid-size-input" class="label">Enter Grid Size:</label>
                 <form class="input-form">
                     <input type="number" id="grid-size-input" name="grid-size" min="4" max="96" required>
-                    <button type="button" id="apply-size-button" onclick="applyGridSize()">Apply</button>
+                    <button type="button" class="retro-button" id="apply-size-button" onclick="applyGridSize()">Apply</button>
                 </form>
+                <label class="label" for="clear-button">Click to clear sketch</label>
+                <button id="clear-button" class="retro-button" type="button" onclick="clearSketchPad()">Clear</button>
             </div>
             <div id="Sketch-panel">
                 <div class="sketch-pad"></div>
