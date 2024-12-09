@@ -1,8 +1,8 @@
 
 const SKETCH_PAD = document.querySelector('.sketch-pad');
 
-for (let j = 0; j < 16; j++) {
-    for (let i = 0; i < 16; i++) {
+for (let j = 0; j < 14; j++) {
+    for (let i = 0; i < 14; i++) {
         const BOX = document.createElement('div');
         BOX.classList.add('sketch-box');
         SKETCH_PAD.appendChild(BOX);
@@ -12,3 +12,8 @@ for (let j = 0; j < 16; j++) {
     }
 }
 
+function applyGridSize() {
+    const gridSizeInput = document.querySelector("#grid-size-input");
+    const gridSize = gridSizeInput.value;
+    console.log(gridSize);
+}
