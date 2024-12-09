@@ -40,3 +40,10 @@ function applyGridSize() {
         }
     }
 }
+
+function clearSketchPad() {
+    const BOXES = document.querySelectorAll('.sketch-box');
+    BOXES.forEach(box => {
+        box.style.backgroundColor = '#ffffff';
+    });
+}
