@@ -18,10 +18,10 @@
     <main class="main">  
         <div class="container">
             <div class="side-panel">
-                <label for="grid-size" class="label">Enter Grid Size:</label>
+                <label for="grid-size-input" class="label">Enter Grid Size:</label>
                 <form class="input-form">
-                    <input type="number" id="grid-size" name="grid-size" min="4" max="96" required>
-                    <button type="button" class="input-button" onclick="applyGridSize()">Apply</button>
+                    <input type="number" id="grid-size-input" name="grid-size" min="4" max="96" required>
+                    <button type="button" id="apply-size-button" onclick="applyGridSize()">Apply</button>
                 </form>
             </div>
             <div id="Sketch-panel">
