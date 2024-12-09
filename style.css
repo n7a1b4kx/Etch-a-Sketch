@@ -11,6 +11,7 @@ body {
 }
 
 .header,
+footer,
 .container,
 .side-panel,
 .input-form,
@@ -20,6 +21,7 @@ body {
 }
 
 .header,
+footer,
 .container,
 .input-form,
 #sketch-panel {
@@ -28,7 +30,8 @@ body {
 
 .title,
 .label,
-.retro-button {
+.retro-button,
+footer {
     font-family: 'Tiny5', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #fac650;
 }
@@ -121,4 +124,13 @@ body {
 
 .sketch-box {
     border: 1px solid #00000010;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    margin: 24px;
 }
