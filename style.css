@@ -47,5 +47,5 @@ body {
 .sketch-box {
     height: 32px;
     width: 32px;
-    border: 1px solid black;
+    border: 1px solid #00000010;
 }
