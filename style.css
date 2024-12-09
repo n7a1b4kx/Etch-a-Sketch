@@ -98,16 +98,10 @@ body {
 
 .sketch-pad {
     display: flex;
-    width: 960px;
+    max-width: 512px;
     flex-wrap: wrap;
     box-sizing: content-box;
     border-radius: 8px;
     background-color: white;
     border: 2px solid black;
-}
-
-.sketch-box {
-    height: 32px;
-    width: 32px;
-    border: 1px solid #00000010;
 }
