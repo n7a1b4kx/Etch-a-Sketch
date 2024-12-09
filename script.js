@@ -2,6 +2,8 @@
 const SKETCH_PAD = document.querySelector('.sketch-pad');
 const SKETCH_PAD_DIMENSIONS = window.getComputedStyle(SKETCH_PAD).maxWidth;
 
+let backgroundColor = '#111720'
+
 function onStart() {
     const gridSize = 32;
     const BOX_DIMENSIONS = parseInt(SKETCH_PAD_DIMENSIONS) / gridSize;
@@ -13,7 +15,7 @@ function onStart() {
             BOX.setAttribute('style', `height: ${BOX_DIMENSIONS}px; width: ${BOX_DIMENSIONS}px;`);
             SKETCH_PAD.appendChild(BOX);
             BOX.addEventListener('mouseover', () => {
-                BOX.setAttribute('style', `background-color: burlywood; height: ${BOX_DIMENSIONS}px; width: ${BOX_DIMENSIONS}px;`);
+                BOX.setAttribute('style', `background-color: ${backgroundColor}; height: ${BOX_DIMENSIONS}px; width: ${BOX_DIMENSIONS}px;`);
             });
         }
     }
@@ -35,7 +37,7 @@ function applyGridSize() {
             BOX.setAttribute('style', `height: ${BOX_DIMENSIONS}px; width: ${BOX_DIMENSIONS}px;`);
             SKETCH_PAD.appendChild(BOX);
             BOX.addEventListener('mouseover', () => {
-                BOX.setAttribute('style', `background-color: burlywood; height: ${BOX_DIMENSIONS}px; width: ${BOX_DIMENSIONS}px;`);
+                BOX.setAttribute('style', `background-color: ${backgroundColor}; height: ${BOX_DIMENSIONS}px; width: ${BOX_DIMENSIONS}px;`);
             });
         }
     }
