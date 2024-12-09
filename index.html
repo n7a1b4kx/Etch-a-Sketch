@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Etch A Sketch</title>
     <!-- linking external font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,13 @@
     </header>
     <main class="main">  
         <div class="container">
-            <div class="side-panel"></div>
+            <div class="side-panel">
+                <label for="grid-size" class="label">Enter Grid Size:</label>
+                <form class="input-form">
+                    <input type="number" id="grid-size" name="grid-size" min="4" max="96" required>
+                    <button type="button" class="input-button" onclick="applyGridSize()">Apply</button>
+                </form>
+            </div>
             <div id="Sketch-panel">
                 <div class="sketch-pad"></div>
             </div>
@@ -27,6 +34,5 @@
             Copyright &copy <a class="github-portfolio" href="https://github.com/n7a1b4kx" rel="noopener noreferrer">n7a1b4kx</a>
         </p> -->
     </footer>
-    <script src="./script.js" defer></script>
 </body>
 </html>
