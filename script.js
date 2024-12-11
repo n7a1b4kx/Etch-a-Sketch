@@ -27,7 +27,8 @@ onStart();
 function applyGridSize() {
     SKETCH_PAD.innerHTML = '';
     const gridSizeInput = document.querySelector("#grid-size-input");
-    const gridSize = (gridSizeInput.value === '' || gridSizeInput.value <= 0) ? 32: gridSizeInput.value;
+    const gridSize = (gridSizeInput.value === '' || gridSizeInput.value <= 0) ? 32: null;
+    (gridSizeInput.value === '' || gridSizeInput.value <= 0) ? alert('Please first enter Grid Size!'): null;
     const BOX_DIMENSIONS = parseInt(SKETCH_PAD_DIMENSIONS) / gridSize;
 
     for (let j = 0; j < gridSize; j++) {
