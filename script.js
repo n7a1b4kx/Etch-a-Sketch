@@ -6,7 +6,7 @@ const gridSizeInput = document.querySelector("#grid-size-input");
 let backgroundColor = '#111720'
 
 function onStart() {
-    const gridSize = 32;
+    const gridSize = 16;
     populateSketchPad(gridSize);
 }
 
@@ -14,9 +14,9 @@ onStart();
 
 function applyGridSize() {
     SKETCH_PAD.innerHTML = '';
-    
-    const gridSize = (gridSizeInput.value === '' || gridSizeInput.value <= 0) ? 32: gridSizeInput.value;
-    (gridSizeInput.value === '' || gridSizeInput.value <= 0) ? alert('Please first enter Grid Size!'): null;
+    const gridSize = (gridSizeInput.value === '' || gridSizeInput.value <= 0) ? 16: (gridSizeInput.value >= 100) ? 100: gridSizeInput.value;
+    console.log(gridSize);
+    (gridSizeInput.value === '' || gridSizeInput.value == 0) ? alert('Please first enter Grid Size!'): (gridSizeInput.value < 0) ? alert("Negative value isn't allowed"): null;
     populateSketchPad(gridSize);
 }
 
@@ -41,8 +41,4 @@ function populateSketchPad(gridSize) {
             });
         }
     }
-}
-
-function inputValidation(gridSize) {
-    (gridSize )
 }
