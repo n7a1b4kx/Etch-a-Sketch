@@ -58,7 +58,7 @@ footer {
 .side-panel {
     flex-direction: column;
     flex-wrap: wrap;
-    height: 256px;
+    height: auto;
     width: 384px;
     padding: 16px;
     gap: 12px;
@@ -107,10 +107,6 @@ footer {
 
 .retro-button:active {
     transform: translateY(4px);
-}
-
-#sketch-panel {
-    align-content: center;
 }
 
 .sketch-pad {
