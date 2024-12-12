@@ -123,6 +123,7 @@ footer {
 }
 
 .sketch-box {
+    flex-grow: 2;
     border: 1px solid #00000010;
 }
 
